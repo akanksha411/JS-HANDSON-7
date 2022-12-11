@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-HANDSON-7</title>
+</head>
+<body>
+    <h1 style="text-align: center;text-decoration: underline;">JS-HANDSON-7</h1>
+    <h3>1.Create a Function</h3>
+    <pre>
+        function Check(obj1){
+            obj1.setter = function(){
+              console.log(obj1.name)
+            } 
+          }
+            
+    </pre>
+    <h3>2.Delete a Parameter</h3>
+    <pre>
+        function Check(obj1) {
+            return obj1.rollno;   
+        }     
+    </pre>
+    <h3>3.Check whether the Package is Dream Package or not</h3>
+    <pre>
+        function Check(obj1) {
+            if(obj1.salary>500000){
+              return "Dream"
+            }  
+            else{
+              return "NotDream"
+            }
+    </pre>
+    <h3>4.Check whether the Object has a parameter or not</h3>
+    <pre>
+        function Check(obj1) {
+            let count = 0;
+            for(let i in obj1){
+              count++;
+            }
+            if(count === 0){
+              return "false"
+            }
+            else{
+              return "true"
+            }
+           }
+           
+           
+    </pre>
+    <h3>5.Merge the Objects</h3>
+    <pre>
+        function Check(obj1,obj2) {
+            let newObject = Object.assign(obj1,obj2);
+            return newObject;
+          }
+             
+    </pre>
+    <h3>6.Object Multiplyer</h3>
+    <pre>
+        function Check(a,obj1) {
+
+            obj1.id = obj1.id * a
+           obj1.houseno = obj1.houseno * a
+           
+           
+           return obj1
+           
+           }   
+    </pre>
+    
+</body>
+</html>
